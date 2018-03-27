@@ -1,8 +1,9 @@
-@media screen and (min-width:700px) {
+@media screen and (min-width:800px) {
 
 	.contacts {
     width: calc(50% - 1px);
     border-right: 1px solid black;
+    display: initial;
   }
 
   .contacts__search {
@@ -13,7 +14,11 @@
   }
 
   .messages {
+    display: initial;
     width: 50%;
+  }
+  .exit-messages {
+    display: none;
   }
 }
 

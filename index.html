@@ -16,7 +16,60 @@
         <i class="fas fa-search"></i>
         <input class="header" name="search_text" type="text" placeholder="Search Chat..."/>
       </form>
+      <section class="contacts__scrollable">
       <ul class="contacts__list">
+        <li class="contact">
+          <section class="contact__image">
+            <i class="fas fa-user-circle fa-2x"></i>
+          </section>
+          <section class="contact__info">
+            <h4 class="contact__name">Emily Smith</h4>
+            <p class="contact__message">This message is about cats and pizza.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+          <section class="contact__updates">
+            <h4 class="contact__update-time">12:00 AM</h4>
+            <span class="contact__update-count">10</span>
+          </section>
+        </li>
+        <li class="contact">
+          <section class="contact__image">
+            <i class="fas fa-user-circle fa-2x"></i>
+          </section>
+          <section class="contact__info">
+            <h4 class="contact__name">Vale Thomas</h4>
+            <p class="contact__message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+          <section class="contact__updates">
+            <h4 class="contact__update-time">10:00 PM</h4>
+            <span class="contact__update-count">105</span>
+          </section>
+        </li>
+        <li class="contact">
+          <section class="contact__image">
+            <i class="fas fa-user-circle fa-2x"></i>
+          </section>
+          <section class="contact__info">
+            <h4 class="contact__name">John Cena</h4>
+            <p class="contact__message">This message is about cats and pizza.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+          <section class="contact__updates">
+            <h4 class="contact__update-time">12:00 AM</h4>
+            <span class="contact__update-count">5</span>
+          </section>
+        </li>
+        <li class="contact">
+          <section class="contact__image">
+            <i class="fas fa-user-circle fa-2x"></i>
+          </section>
+          <section class="contact__info">
+            <h4 class="contact__name">Bob Ross</h4>
+            <p class="contact__message">This message is about cats and pizza.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+          <section class="contact__updates">
+            <h4 class="contact__update-time">12:00 AM</h4>
+            <span class="contact__update-count">5</span>
+          </section>
+        </li>
         <li class="contact">
           <section class="contact__image">
             <i class="fas fa-user-circle fa-2x"></i>
@@ -69,8 +122,13 @@
           </section>
         </li>
       </ul>
-    </section><section class="messages">
+      </section>
+    </section>
+    <section class="messages">
       <section class="chat-actions header">
+        <div class="chat-action exit-messages">
+          <i class="fas fa-arrow-left"></i>
+        </div>
         <div class="chat-action add-people">
           <i class="fas fa-user-plus"></i> Add People
         </div>
@@ -81,6 +139,7 @@
           <i class="fas fa-ellipsis-h"></i>
         </div>
       </section>
+      <section class="messages__scrollable">
       <ul class="messages__list">
         <li class="message message__sent">
           <div class="message__container">
@@ -140,11 +199,14 @@
           </div>
         </li>
       </ul>
+    </section>
       <form class="messages__send">
-        <i class="fas fa-paperclip fa-2x"></i>
+        <i class="messages__send-attachment fas fa-paperclip fa-2x"></i>
         <input name="message_text" type="text" placeholder="Type here..." />
         <button class="messages__send-button" type="submit">Send</button>
       </form>
     </section>
   </body>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </html>
