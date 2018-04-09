@@ -1,0 +1,14 @@
+{
+  "name": "pillclub",
+  "version": "1.0.0",
+  "description": "Pillclub frontend interview",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "d0coat01",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
